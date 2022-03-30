@@ -1,0 +1,11 @@
+import random
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice(word_list)
+guess = input("Guess the letter:")
+guess.lower()
+for i in guess:
+  for j in chosen_word:
+    if i == j:
+      print("Guess is correct:")
+    else:
+      print("not")
